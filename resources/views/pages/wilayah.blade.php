@@ -2,7 +2,9 @@
 
 @section('content')
     <div>
-        <table class="table">
+        <h3 class="mt-3">Wilayah</h3>
+
+        <table class="table mt-3">
             <thead>
                 <tr>
                     <th scope="col">Kode Provinsi</th>

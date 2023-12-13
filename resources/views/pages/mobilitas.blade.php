@@ -1,7 +1,19 @@
 @extends('app')
 @section('content')
     <div>
-        <table class="table">
+        <h3 class="mt-3">
+            Mobilitas:{{ ' ' }}
+            @if ($type == 'transmigrasi')
+                {{ 'Transmigrasi' }}
+            @else
+                @if ($type == 'imigrasi')
+                    {{ 'Imigrasi' }}
+                @else
+                    {{ 'Emigrasi' }}
+                @endif
+            @endif
+        </h3>
+        <table class="table mt-3">
             <thead>
                 <tr>
                     <th scope="col">ID</th>

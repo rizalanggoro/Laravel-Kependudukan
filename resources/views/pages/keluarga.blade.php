@@ -1,9 +1,11 @@
 @extends('app')
 
 @section('content')
-    <div class="container">
+    <div>
+        <h3 class="mt-3">Keluarga</h3>
+
         {{-- table content --}}
-        <table class="table">
+        <table class="table mt-3">
             <thead>
                 <tr>
                     <th scope="col">#</th>
