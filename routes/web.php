@@ -26,7 +26,10 @@ Route::get('/', function () {
 });
 
 Route::get('/penduduk', [ControllerPenduduk::class, 'show']);
-Route::post('/penduduk', [ControllerPenduduk::class, 'showSearch']);
+Route::post('/penduduk', [ControllerPenduduk::class, 'update']);
+Route::get('/penduduk/cari', [ControllerPenduduk::class, 'showSearch']);
+Route::delete('/penduduk/{nik}', [ControllerPenduduk::class, 'delete']);
+Route::get('/penduduk/ubah/{nik}', [ControllerPenduduk::class, 'edit']);
 
 Route::get('/keluarga', [ControllerKeluarga::class, 'show']);
 
